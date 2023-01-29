@@ -6,5 +6,5 @@ it("App displays header", async () => {
   render(<App />);
 
   const header = await screen.findByText(/Student Self-Service/);
-  expect(header).toBeTruthy();
+  expect(header).toBeInTheDocument();
 });

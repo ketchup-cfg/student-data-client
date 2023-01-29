@@ -1,12 +1,16 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest/globals": true
     },
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
+        "plugin:jest-dom/recommended",
+        "react-app",
+        "plugin:react/jsx-runtime"
     ],
     "overrides": [
     ],
@@ -17,12 +21,13 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "jest"
     ],
     "rules": {
         "indent": [
             "error",
-            4
+            2
         ],
         "linebreak-style": [
             "error",
@@ -35,6 +40,11 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
     }
 }
