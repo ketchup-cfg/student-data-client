@@ -1,9 +1,10 @@
 import "./App.css";
+import Header from "./Header";
 
 const App = () => {
   return (
     <>
-      <header>Student Self-Service</header>
+      <Header />
       <main></main>
     </>
   );
