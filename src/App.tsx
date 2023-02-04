@@ -4,7 +4,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main></main>
+      <main className="container py-4 px-3 mx-auto"></main>
     </>
   );
 };
